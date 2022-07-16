@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.joshuamc.ejercicio2_4.Transacciones.Transacciones;
 
 public class SQLiteConexion extends SQLiteOpenHelper {
-    public SQLiteConexion(Context context, String dbname, SQLiteDatabase.CursorFactory factory, int version)
-    {
+
+    public SQLiteConexion(Context context, String dbname, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, dbname, factory, version);
     }
 
@@ -19,8 +19,7 @@ public class SQLiteConexion extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
-    {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(Transacciones.DropTableFirma);
         onCreate(db);
     }

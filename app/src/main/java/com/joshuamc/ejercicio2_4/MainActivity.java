@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         if (!Descripcion.getText().toString().isEmpty()) {
             guardarImagen();
         } else {
-            Toast.makeText(getApplicationContext(), "INGRRESE DESCRIPCION", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Debe ingresar la descripción", Toast.LENGTH_LONG).show();
         }
     }
 

@@ -25,12 +25,12 @@
     <Button
         android:id="@+id/btnguardar"
         android:layout_width="411dp"
-        android:layout_height="61dp"
+        android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        android:text="Guardar Firma"
-        android:textSize="20sp"
+        android:backgroundTint="@color/green"
+        android:text="@string/guardar_firma"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:icon="@android:drawable/ic_menu_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,14 +39,17 @@
     <Button
         android:id="@+id/btnlista"
         android:layout_width="411dp"
-        android:layout_height="69dp"
-        android:text="Lista de Firmas"
-        android:textSize="20sp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/lista_de_firmas"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnguardar" />
+        app:layout_constraintTop_toBottomOf="@+id/btnguardar"
+        app:layout_constraintVertical_bias="0.26" />
 
     <EditText
         android:id="@+id/Descripcion"
@@ -54,13 +57,14 @@
         android:layout_height="56dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Descripcion"
+        android:hint="@string/descripcion"
         android:inputType="textPersonName"
         android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:autofillHints="" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

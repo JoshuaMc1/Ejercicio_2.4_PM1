@@ -27,19 +27,18 @@ public class ActivityListaFirma extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_firma);
 
-        recyclerView=(RecyclerView)findViewById(R.id.viewRe);
+        recyclerView = findViewById(R.id.viewRe);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        reviewadapter=new Adaptador(ObtenerFirma());
+        reviewadapter = new Adaptador(ObtenerFirma());
         recyclerView.setAdapter(reviewadapter);
     }
 
-    private List<Signatures> ObtenerFirma()
-    {
+    private List<Signatures> ObtenerFirma() {
         SQLiteConexion conexion = new SQLiteConexion(this, Transacciones.NameDataBase,null,1);
         SQLiteDatabase db= conexion.getReadableDatabase();
-        Signatures firma=null;
-        lista= new ArrayList<Signatures>();
+        Signatures firma;
+        lista= new ArrayList<>();
         Cursor cursor = db.rawQuery("SELECT * FROM " + Transacciones.tablaFirma, null);
 
         while(cursor.moveToNext())

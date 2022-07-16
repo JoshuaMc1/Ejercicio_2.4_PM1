@@ -29,15 +29,16 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="0dp"
-                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
                 app:civ_border_color="#417AEC"
                 app:civ_border_width="2dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlSymmetry" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
@@ -48,7 +49,7 @@
                     android:id="@+id/txt2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="TextView"
+                    android:text="@string/textview"
                     android:gravity="center"
                     android:textSize="16sp" />
             </LinearLayout>

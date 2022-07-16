@@ -5,12 +5,6 @@ public class Signatures {
     private byte[] firma;
     private Integer id;
 
-    public Signatures(Integer id,byte[] firma,String descripcion) {
-        this.id = id;
-        this.firma = firma;
-        this.descripcion = descripcion;
-    }
-
     public Signatures() {}
 
     public String getDescripcion() {return descripcion;}
